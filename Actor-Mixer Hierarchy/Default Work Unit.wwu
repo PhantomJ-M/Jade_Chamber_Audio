@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{33145386-40A6-482C-9A79-7408F6B0DDDF}" SchemaVersion="70">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{33145386-40A6-482C-9A79-7408F6B0DDDF}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Speech Master" ID="{21E21326-D973-4DDA-A91C-A66C680EBB0E}" ShortID="88602518">
+					<PropertyList>
+						<Property Name="DivergenceCenter" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="LeaderSpeech" ID="{DD9801A4-ECD4-4536-AEC3-24C4630BB45F}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Speech Bus" ID="{63814249-CA1F-4CAF-A817-215010F3823D}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Speech" ID="{196B745C-8AA8-455A-A842-62F4E08EDA71}" ShortID="834200042">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Narrator" ID="{7018C136-6B19-469C-A40A-2E443A48D5A3}" ShortID="416114231">
+									<PropertyList>
+										<Property Name="DivergenceCenter" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Speech_Ingame_Narrator" ID="{71F597A1-082A-4731-9C9D-60A9CF837103}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="WonderQuote" ID="{CB4758AA-C88B-4D93-8831-3343682D4199}" ShortID="155948776">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-0.5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="JADECHAMBER_QUOTE" ID="{570F9D31-B921-4782-AAA1-026FB36362F5}" ShortID="817424120" Type="Voice">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-24</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{C99889BE-1441-4688-924F-670723588DE9}" ShortID="944900608">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Chinese(PRC)</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{D835D1FE-3F4A-4612-BD65-75BEE5E4029E}" ShortID="510465450">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Chinese(Taiwan)</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{B239ABA5-42D4-456A-86BC-9D161B91F551}" ShortID="960804329">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>English(US)</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{0F61E91F-3F7E-4DC5-A89E-CA4FA2B6F749}" ShortID="330052278">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>French(France)</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{B6466C48-12F7-4490-93FD-9FEACB630E25}" ShortID="880048897">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>German</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{E4E78C4F-BEB8-4FC2-849A-B9F0800D3732}" ShortID="865850246">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Italian</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{CC98CD8D-CD6F-4854-BC69-5A8886DF0E44}" ShortID="882863233">
+															<Language>Japanese</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{8A7FCF55-DB89-4E48-B534-9C4740944BC7}" ShortID="231298663">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Korean</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{24116B5B-E4F3-4567-99C0-EF891B0B27F8}" ShortID="1000134394">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Polish</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{46297D36-2EF8-406C-80F0-71E5AF600020}" ShortID="999965149">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Russian</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="JADECHAMBER_QUOTE" ID="{40042663-E689-4D1A-AE11-B2181F4B7DC7}" ShortID="414705924">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>Spanish(Spain)</Language>
+															<AudioFile>JADECHAMBER_QUOTE.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{0F61E91F-3F7E-4DC5-A89E-CA4FA2B6F749}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{46297D36-2EF8-406C-80F0-71E5AF600020}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{B6466C48-12F7-4490-93FD-9FEACB630E25}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{E4E78C4F-BEB8-4FC2-849A-B9F0800D3732}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{8A7FCF55-DB89-4E48-B534-9C4740944BC7}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{24116B5B-E4F3-4567-99C0-EF891B0B27F8}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{40042663-E689-4D1A-AE11-B2181F4B7DC7}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{CC98CD8D-CD6F-4854-BC69-5A8886DF0E44}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{B239ABA5-42D4-456A-86BC-9D161B91F551}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{C99889BE-1441-4688-924F-670723588DE9}" Platform="Linked"/>
+														<ActiveSource Name="JADECHAMBER_QUOTE" ID="{D835D1FE-3F4A-4612-BD65-75BEE5E4029E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Game_Cues" ID="{78C832BE-C446-4D47-AF37-1F780388F630}" ShortID="368813534">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Wonder Music Bus" ID="{7736DAA7-20CC-4677-A5E1-4BE38D5D6ECD}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="WondersMusic" ID="{3B1F011B-7B15-4173-922D-421E88501755}" ShortID="363552466">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3.5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="JadeChamber" ID="{7719FB06-2F5B-4A24-AB0D-3FFEC9C7739A}" ShortID="575043560" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1517B564-DC3C-401F-A5D3-E764772893A6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E91763E-B8C9-4FEC-A959-7E4171FD2AC9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="JadeChamber" ID="{E0F1F63F-E9AA-4483-9EA6-ECC1ECB2E5B3}" ShortID="676133183">
+											<Language>SFX</Language>
+											<AudioFile>JadeChamber.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="JadeChamber" ID="{E0F1F63F-E9AA-4483-9EA6-ECC1ECB2E5B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

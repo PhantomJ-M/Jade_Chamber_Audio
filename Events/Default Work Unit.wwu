@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7714AC88-E6F9-45FF-96C4-AA07F75D3FE9}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7714AC88-E6F9-45FF-96C4-AA07F75D3FE9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_JADECHAMBER_QUOTE" ID="{31F2FCF3-0C21-4877-B614-D17E942432ED}">
+					<ChildrenList>
+						<Action Name="Play" ID="{368EB1C9-691A-4D77-958A-72831479EF75}" ShortID="242192139" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{97F20AE8-006F-4A6D-9068-F885D0267421}" Global="false">
+									<ObjectRef Name="JADECHAMBER_QUOTE" ID="{570F9D31-B921-4782-AAA1-026FB36362F5}" WorkUnitID="{33145386-40A6-482C-9A79-7408F6B0DDDF}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wonder_Music_Jade_Chamber" ID="{045CCBF3-9AF8-4CF4-81EC-5766A68761E8}">
+					<ChildrenList>
+						<Action Name="Play" ID="{075B97BF-5041-4125-BA6B-C4976317474F}" ShortID="847576887" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{2EEEDDC5-7055-4913-A554-B63BCBDC8E7C}" Global="false">
+									<ObjectRef Name="JadeChamber" ID="{7719FB06-2F5B-4A24-AB0D-3FFEC9C7739A}" WorkUnitID="{33145386-40A6-482C-9A79-7408F6B0DDDF}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Wonder_Music_Jade_Chamber" ID="{950DF4B6-5B68-4F39-8E2E-C04B42E93453}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{B4A56CD5-49AB-4D87-9A1C-4478DFC7D9BA}" ShortID="739416204" Type="Stop" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{77E53A72-3C8A-4876-ACE3-B0AB1B26A1BD}" Global="true">
+									<ObjectRef Name="JadeChamber" ID="{7719FB06-2F5B-4A24-AB0D-3FFEC9C7739A}" WorkUnitID="{33145386-40A6-482C-9A79-7408F6B0DDDF}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

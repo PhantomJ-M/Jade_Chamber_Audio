@@ -1,0 +1,10 @@
+*.wem
+*.wav
+*.log
+*.akd
+*.validationcache
+*.wsettings
+.cache/
+Cooked/
+GeneratedSoundBanks/
+Originals/

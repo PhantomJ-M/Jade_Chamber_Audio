@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{95775847-AF23-4A2E-8149-AB2F9FF0E76C}" SchemaVersion="70">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{95775847-AF23-4A2E-8149-AB2F9FF0E76C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Wonder_JadeChamber_Bank" ID="{0416BB4A-29D1-4D90-9DD5-BC80DEFE03C8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Wonder_Music_Jade_Chamber" ID="{950DF4B6-5B68-4F39-8E2E-C04B42E93453}" WorkUnitID="{7714AC88-E6F9-45FF-96C4-AA07F75D3FE9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Wonder_Music_Jade_Chamber" ID="{045CCBF3-9AF8-4CF4-81EC-5766A68761E8}" WorkUnitID="{7714AC88-E6F9-45FF-96C4-AA07F75D3FE9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_JADECHAMBER_QUOTE" ID="{31F2FCF3-0C21-4877-B614-D17E942432ED}" WorkUnitID="{7714AC88-E6F9-45FF-96C4-AA07F75D3FE9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList>
+						<ObjectRef Name="WondersMusic" ID="{3B1F011B-7B15-4173-922D-421E88501755}" WorkUnitID="{33145386-40A6-482C-9A79-7408F6B0DDDF}"/>
+						<ObjectRef Name="WonderQuote" ID="{CB4758AA-C88B-4D93-8831-3343682D4199}" WorkUnitID="{33145386-40A6-482C-9A79-7408F6B0DDDF}"/>
+					</ObjectExclusionList>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
